@@ -91,7 +91,7 @@
                 />
 
 
-            <Button
+            <Button android:id="@+id/subbtn"
                 android:layout_width="0dp"
                 android:layout_height="52dp"
                 android:layout_weight="1"
