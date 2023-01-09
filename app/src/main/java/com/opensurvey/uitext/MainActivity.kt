@@ -20,9 +20,22 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
+        //변수 만들기
+        val myName = "김태홍" //
+        var myAge : Int// variable : 변수
+
+
+
+
+
+        myAge=35
+        myAge=34
+
         subbtn.setOnClickListener {
 
             Toast.makeText(this, "아이디를 입력해 주세요", Toast.LENGTH_SHORT).show()
+            Log.d("변수값",myName.)
 
 
 
