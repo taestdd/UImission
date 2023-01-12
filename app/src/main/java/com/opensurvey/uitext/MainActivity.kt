@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import org.w3c.dom.Text
+import java.time.Duration
+import kotlin.coroutines.jvm.internal.CompletedContinuation.context
 import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
@@ -13,48 +16,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mainbtn.setOnClickListener {
 
-            Log.d("메인버튼","메인화면클릭확인")
-            Log.e("메인버튼","에러메세지")
 
-            val userAge = 19
+        subbtn.setOnClickListener{
 
-            if (userAge >= 20) {
+            val age=30
+            if (age>29) {
 
-                Log.d("성인판별","성인입니")
-            }
+                Toast.makeText("good",Int)
 
-            else if (userAge >= 17) {
-                Log.d("성인판별","고딩입니다")
-            }
 
-            else {
-                Log.d("성인판별","민짜입니다")
+
             }
 
         }
 
 
-        //변수 만들기
-        val myName = "김태홍" //
-        var myAge : Int// variable : 변수
 
 
-
-
-
-        myAge=35
-        myAge=34
-
-        subbtn.setOnClickListener {
-
-            Toast.makeText(this, "아이디를 입력해 주세요", Toast.LENGTH_SHORT).show()
-            Log.d("변수값",myName)
-
-
-
-        }
 
 
 
